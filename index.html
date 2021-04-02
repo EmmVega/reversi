@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./functions.js" defer></script>
+    <title>Yllusion</title>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <div id="backshade"></div>
+
+    <div class="modal" id="add-modal">
+        <div class="modal__content">
+          <label for="title">Full name</label>
+          <input type="text" name="title" id="title" autocomplete="off" />
+          <label for="image-url">u have homo hommies?</label>
+          <input list='cuantos' />
+          <datalist id='cuantos'>
+                <option value="yes, 4"></option>   
+                <option value="No, they're sluts"></option>   
+                <option value="all answers are correct"></option>   
+                <option value="que chsm amlo"></option>   
+          </datalist>
+          <label for="price">How pussies are they? </label>
+            <input type="range" name="price" id="price" min="0" max="8000" step="10" value="250000">
+            <output class="price-output" for="price"></output>
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--passive">Cancel</button>
+          <button class="btn btn--success">Sign up</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="nav-bar">
+            <img class="logo" src="./Logo Reborn.png" alt="Logo" title="Home">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+                </style>
+            <h1 class="main-header">YLLUSION</h1>
+            <ul class="nav-menu">
+                <li class="menu-button" id="subs-btn" >Subscribe!</li>
+                <li class="menu-button">Services</li>
+                <li class="menu-button" >Team</li>
+                <li class="menu-button">Awards & References</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-bigbox">
+        <nav>
+            <ul class="side-bar">
+                <li id="side-items1">
+                    <img id="gif1" src="./material/casablanca-gif.gif"/>                   
+                </li>
+                <li id="side-items2">
+                    <img class="gif2" src="./material/videoclip-gif.gif" alt="">
+                </li>
+                <li id="side-items3">
+                    <img class="gif3" src="./material/vlog-gif.gif" alt="">
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <p id="main-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur neque nobis eligendi quo, tenetur maiores labore exercitationem, cumque architecto voluptatem. Alias eum placeat earum, libero deleniti vero distinctio accusamus!</p> 
+            <p id="main-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur neque nobis eligendi quo, tenetur maiores labore exercitationem, cumque architecto voluptatem. Alias eum placeat earum, libero deleniti vero distinctio accusamus!</p> 
+            <p id="main-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur neque nobis eligendi quo, tenetur maiores labore exercitationem, cumque architecto voluptatem. Alias eum placeat earum, libero deleniti vero distinctio accusamus!</p> 
+        </div>
+        <figure>
+            <video id="vid1" controls preload="auto" >
+                <source src="material/CASABLANCA _ Recreación - Escena final.mp4" >
+            </video>
+            <video id="vid2" controls preload="auto">
+                <source src="material/videoclip.mp4" >
+            </video>
+            <video id="vid3" controls preload="auto">
+                <source src="material/vlog-vid.mp4" >
+            </video>
+        </figure>
+    </main>
+</body>
+</html>
